@@ -4,10 +4,12 @@ Public snapshot of **laeta**’s Omarchy `$HOME` right after account creation (n
 
 ## Layout
 
-- `home/` — mirror of `/home/laeta` at capture time (configs from `/etc/skel` + Omarchy defaults).
-- `SNAPSHOT-*.txt` — inventory and machine metadata.
+**Dotbare:** bare repo lives in `~/.cfg` on user `laeta`; work tree is `$HOME`. Remote = this repository (`master`).
 
-Excluded from the mirror: `.cache/`, `.local/share/nvim/` (Lazy.nvim download tree), future `.cfg/` (dotbare).
+- Dotfiles at repo root (`.bashrc`, `.config/`, …) — same paths as on disk.
+- `SNAPSHOT-*.txt` — inventory from first capture (historical).
+
+Excluded via `.gitignore`: `.cache/`, `.local/share/nvim/`, `.cfg/`, and playbook session noise (see file).
 
 ## Capture
 

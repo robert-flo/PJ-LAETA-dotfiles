@@ -1,5 +1,70 @@
-# PJ-LAETA-dotfiles — snapshot ignores (Omarchy skel, no runtime bulk)
+
+# Accidental telemetry / editor scratch
+/.antigravity-ide/
+/.bun/
 .cache/
-.local/share/nvim/
-.local/state/
+/.cache/
+/.cargo/
 .cfg/
+/.claude/
+/.config/BraveSoftware/
+/.config/chromium/
+/.config/Cursor/
+/.config/cursor/chats/
+/.config/cursor/sentry/
+/.config/cursor/statsig-cache.json
+/.config/dconf/
+/.config/gcloud/*.db
+/.config/gcloud/gce/
+/.config/gcloud/.last_*
+/.config/gcloud/logs/
+/.config/google-chrome/
+/.config/go/telemetry/
+/.config/Grok Bot/
+/.config/Hermes/
+/.config/hermes-agent/
+/.config/hypr/*.bak
+/.config/ibus/
+/.config/micro/buffers/
+/.config/NIXFREDOS/
+/.config/obsidian/*
+!/.config/obsidian/obsidian.json
+/.config/pulse/
+# cursor-agent: config yes; chats and telemetry no
+/.cursor/plans/
+/.cursor/plugins/
+/.cursor/projects/
+# Desktop session state (not portable)
+# Fabric / uv binaries under ~/.local
+# gcloud: keep configurations/ + active_config; drop DBs and probes
+/.gemini/
+/.gnupg/random_seed
+# gnupg runtime sockets
+/.gnupg/S.*
+/.gnupg/*.socket
+/go/
+# Hermes bulk dirs
+/.hermes/cache/
+/.hermes/hermes-agent/
+/.hermes/installs/
+/.hermes/tools/
+# Hyprland backups
+# IDE / agent runtimes (never snapshot)
+# Large Electron profiles (Cap. 7 — out of sura-home)
+/.local/lib/
+/.local/share/fabric/
+/.local/share/mise/
+.local/share/nvim/
+/.local/share/Trash/
+/.local/share/uv/
+/.local/share/uvx/
+.local/state/
+# Nested git repos (own backup / not part of HOME snapshot)
+/.npm/
+# PJ-LAETA-dotfiles — snapshot ignores (Omarchy skel, no runtime bulk)
+# Pulse cookie and other machine-local audio
+# Source: playbook Cap. 7; sync via rebuild.sh → ~/.gitignore
+# SSH agent / control paths
+/.ssh/control-*
+# sura-home (dotbare): curated ignores — runtime, caches, nested repos.
+# Toolchains and caches (reinstall on new machine)
