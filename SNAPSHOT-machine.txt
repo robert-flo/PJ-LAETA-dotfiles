@@ -1,0 +1,3 @@
+captured_utc=2026-10-14T02:45:10Z
+source_user=laeta uid=1004
+source_home=/home/laeta
